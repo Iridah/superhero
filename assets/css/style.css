@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    color: #373A3C;
+    background-image: url("../img/superhero-background-3587155_1280.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+/*navbar*/
+.navbar {
+    background-color: #373A3C;
+}
+.navbar-brand {
+    color: #FFFFFF;
+}
+/*header*/
+header {
+    margin: auto;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+}
+/*section*/
+#h2h {
+    display: flex;
+    justify-content: center;
+    color: #FFFFFF;
+    font-size: xx-large;
+}
+#h3h {
+    display: flex;
+    justify-content: center;
+    color: #FFFFFF;
+    font-size: x-large;
+}
+#asunt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    font-size: xx-large;
+}
+div .btn {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+/*validacion adicional*/
+input:invalid {
+    border: 2px dashed red;
+}
+input:invalid:required {
+    background-image: linear-gradient(to right, pink, lightgreen);
+}
