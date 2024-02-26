@@ -44,7 +44,7 @@ header {
     margin: auto;
     font-size: xx-large;
 }
-div .btn {
+div #botton {
     text-align: center;
     justify-content: center;
     align-items: center;
