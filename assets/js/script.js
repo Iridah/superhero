@@ -1,4 +1,5 @@
 /*captura*/
+const num = $("#botton").val();
 let form = document.getElementById("form");
 
 /*validacion*/
@@ -6,8 +7,7 @@ form.addEventListener( "submit", function (event) {
     event.preventDefault();
     limpiarErrores();
     let textAsunt = document.querySelector(".textAsunt").value; 
-    let resultado = validar(textNombre,textAsunt,textMensaje);
-
+    let resultado = validar(textAsunt);
     if (resultado == true){
         exito();
     };
@@ -24,7 +24,7 @@ form.addEventListener( "submit", function (event) {
 
    function validar(asunt) {
     let pasamosLaValidacion = true;
-    let validacionAsunto = /[0-9]/i;
+    let validacionAsunto = /[0-9]/;
     if (validacionAsunto.test(asunt) == false) {
         document.querySelector(".errorAsunt").innerHTML = "Ingrese un codigo de superheroe correcto, por favor.";
         pasamosLaValidacion = false;
@@ -32,9 +32,9 @@ form.addEventListener( "submit", function (event) {
     return pasamosLaValidacion;
    };
 /*ajax*/
-$(function(textAsunt){
+$(function(){
     $.ajax({
-        url: "https://superheroapi.com/api/2143190186025796/",
+        url: 'https://fixcors.site/https://superheroapi.com/api/2143190186025796/'+num,
         type: "GET",
         dataType: "json",
         success: function (posts) {

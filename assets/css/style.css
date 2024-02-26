@@ -6,9 +6,10 @@ body {
     font-family: 'Roboto', sans-serif;
     color: #373A3C;
     background-image: url("../img/superhero-background-3587155_1280.jpg");
-    background-repeat: no-repeat;
-    background-attachment: scroll;
+    background-repeat: round;
+    background-attachment: local;
 }
+
 /*navbar*/
 .navbar {
     background-color: #373A3C;
@@ -44,6 +45,11 @@ header {
     font-size: xx-large;
 }
 div .btn {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+div p, .resultado {
     text-align: center;
     justify-content: center;
     align-items: center;
